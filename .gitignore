@@ -1,5 +1,6 @@
 __pycache__/
 old/
+*.pyc
 
 # Directories with the files pulled from each double-octect.
 # So for example, 104.236 has up for 65536 files for each IP 
