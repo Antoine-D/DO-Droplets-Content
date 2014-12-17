@@ -1,0 +1,11 @@
+__pycache__/
+old/
+
+# Directories with the files pulled from each double-octect.
+# So for example, 104.236 has up for 65536 files for each IP 
+# address: 104.236.0.0 - 104.236.256.256 
+104.131/
+107.170/
+178.62/
+104.236/
+162.243/
