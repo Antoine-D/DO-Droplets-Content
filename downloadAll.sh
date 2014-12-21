@@ -3,12 +3,12 @@ download_from_ips() {
     do
         for FOURTH_QUADRANT in $(seq 1 256)
         do
-            IP_ADDRESS="178.62.${THIRD_QUADRANT}.${FOURTH_QUADRANT}"           $
+            IP_ADDRESS="178.62.${THIRD_QUADRANT}.${FOURTH_QUADRANT}"                            
             if wget --spider --quiet --connect-timeout=5 --tries=2 $IP_ADDRESS
             then
-                wget --quiet -O $IP_ADDRESS --connect-timeout=5 --tries=2 $IP_A$
+                wget --quiet -O $IP_ADDRESS --connect-timeout=5 --tries=2 $IP_ADDRESS &
                 sleep 4
-                kill $!
+                kill $!           
             fi
         done
     done
